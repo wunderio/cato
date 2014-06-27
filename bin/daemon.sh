@@ -1,5 +1,8 @@
 #!/bin/sh
 
+NAME=hubot
+USER=hubot
+DESC="hubot"
 USER_HOME="/opt/$USER"
 HUBOT_ROOT="$USER_HOME/hubot"
 HUBOT_HOME="$HUBOT_ROOT/node_modules/hubot"
@@ -8,33 +11,48 @@ PIDFILE=$HUBOT_ROOT/hubot.pid
 
 case "$1" in
 start)
-        echo "Starting"
+        printf "%-50s" "Starting $DESC..."
         . $HUBOT_ROOT/bin/.hubotrc
-        /sbin/start-stop-daemon --start --background --pidfile $PIDFILE --make-pidfile -d $HUBOT_ROOT --exec $DAEMON
-        echo "."
+        PID=`runuser -c "$DAEMON" - $USER >> /var/log/hubot 2>&1 & echo $!`
+        if [ -z $PID ]; then
+            printf "%s\n" "Fail"
+        else
+            echo $PID > $PIDFILE
+            printf "%s\n" "Ok"
+        fi
         ;;
-debug)
-        echo "Debug mode: no backgrounding"
-        . $HUBOT_ROOT/bin/.hubotrc
-        /sbin/start-stop-daemon --start --pidfile $PIDFILE --make-pidfile -d $HUBOT_ROOT --exec $DAEMON
-        echo "."
+status)
+        printf "%-50s" "Checking $DESC..."
+        if [ -f $PIDFILE ]; then
+            PID=`cat $PIDFILE`
+            if [ -z "`ps axf | grep ${PID} | grep -v grep`" ]; then
+                printf "%s\n" "Process dead but pidfile exists"
+            else
+                echo "Running"
+            fi
+        else
+            printf "%s\n" "Service not running"
+        fi
         ;;
 stop)
-        echo "Stopping"
-        /sbin/start-stop-daemon --stop --pidfile $PIDFILE
-        echo "."
+        printf "%-50s" "Stopping $DESC"
+            PID=`cat $PIDFILE`
+        if [ -f $PIDFILE ]; then
+            kill $PID
+            printf "%s\n" "Ok"
+            rm -f $PIDFILE
+        else
+            printf "%s\n" "pidfile not found"
+        fi
         ;;
 restart)
-        echo "Restarting"
-        /sbin/start-stop-daemon --stop --pidfile $PIDFILE
-        . $HUBOT_ROOT/bin/.hubotrc
-        /sbin/start-stop-daemon --start --pidfile $PIDFILE --make-pidfile --background -d $HUBOT_ROOT --exec $DAEMON
-        echo "."
+        $0 stop
+        $0 start
         ;;
 
 
     *)
-        echo "Usage: $0 {start|stop|restart|debug}" >&2
+        echo "Usage: $0 {status|start|stop|restart}" >&2
         exit 1
         ;;
     esac
