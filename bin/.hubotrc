@@ -14,7 +14,7 @@ export HUBOT_WEATHER_CELSIUS=1
 # export HUBOT_HIPCHAT_PASSWORD="... fill this in ... "
 # export HUBOT_AUTH_ADMIN="... fill this in ... "
 
-# export HUBOT_ADAPTER="hipchat"
+export HUBOT_ADAPTER="hipchat"
 # export HUBOT_PATH="/opt/hubot/hubot"
 
 #---------------- END HUBOT CONFIG --------------------------------

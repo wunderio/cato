@@ -7,7 +7,8 @@ USER_HOME="/opt/$USER"
 HUBOT_ROOT="$USER_HOME/hubot"
 HUBOT_HOME="$HUBOT_ROOT/node_modules/hubot"
 DAEMON="$HUBOT_HOME/bin/hubot"
-DAEMONOPTS="--adapter hipchat"
+#DAEMONOPTS="--adapter hipchat"
+DAEMONOPTS=""
 PIDFILE=$HUBOT_ROOT/hubot.pid
 
 case "$1" in
