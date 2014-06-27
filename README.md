@@ -1,3 +1,9 @@
+# Not now, Cato!
+
+This is Cato, the [WunderRoot](http://www.wunderroot.co.uk/) implementation of [Hubot](https://hubot.github.com/).
+
+Any custom scripts should be added in the /scripts directory, and Cato will find them in there automatically.
+
 # Hubot
 
 This is a version of GitHub's Campfire bot, hubot. He's pretty cool.
