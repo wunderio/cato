@@ -8,9 +8,14 @@ export HUBOT_WOLFRAM_APPID="2TPVX8-E3QHJHWXHX"
 export HUBOT_FORECAST_API_KEY="fd0a1bdc2a4e9a3332e407db7b8b212b"
 export HUBOT_WEATHER_CELSIUS=1
 
+# bin/hubot --adapter hipchat
+
+# export HUBOT_HIPCHAT_JID="... fill this in ... "
+# export HUBOT_HIPCHAT_PASSWORD="... fill this in ... "
 # export HUBOT_AUTH_ADMIN="... fill this in ... "
 
-export HUBOT_PATH="/opt/hubot/hubot"
+# export HUBOT_ADAPTER="hipchat"
+# export HUBOT_PATH="/opt/hubot/hubot"
 
 #---------------- END HUBOT CONFIG --------------------------------
 

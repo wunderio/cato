@@ -7,13 +7,14 @@ USER_HOME="/opt/$USER"
 HUBOT_ROOT="$USER_HOME/hubot"
 HUBOT_HOME="$HUBOT_ROOT/node_modules/hubot"
 DAEMON="$HUBOT_HOME/bin/hubot"
+DAEMONOPTS="--adapter hipchat"
 PIDFILE=$HUBOT_ROOT/hubot.pid
 
 case "$1" in
 start)
         printf "%-50s" "Starting $DESC..."
         . $HUBOT_ROOT/bin/.hubotrc
-        PID=`runuser -c "$DAEMON" - $USER >> /var/log/hubot 2>&1 & echo $!`
+        PID=`runuser -c "$DAEMON $DAEMONOPTS" - $USER >> /var/log/hubot 2>&1 & echo $!`
         if [ -z $PID ]; then
             printf "%s\n" "Fail"
         else
