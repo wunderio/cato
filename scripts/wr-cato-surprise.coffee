@@ -38,10 +38,10 @@ class WRCatoSurprise
     ]
 
     @cato_quotes = [
-      "Cato: Please, boss! I thought you were dead!
-Clouseau: So as a tribute to my memory, you open this ... this Chinese nookie factory?
-Cato: l had to do something to keep busy. Besides, a first-rate joint like this can make as much as three, four hundred thousand a year!
-Clouseau: Is that net?
+      "Cato: Please, boss! I thought you were dead!\n
+Clouseau: So as a tribute to my memory, you open this ... this Chinese nookie factory?\n
+Cato: l had to do something to keep busy. Besides, a first-rate joint like this can make as much as three, four hundred thousand a year!'n
+Clouseau: Is that net?\n
 Cato: No, gross.",
       "Saaaaaaaaaah!",
       "Clouseau: Cato! You imbecile, not now Cato!",
