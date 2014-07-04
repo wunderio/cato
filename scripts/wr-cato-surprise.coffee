@@ -68,12 +68,12 @@ module.exports = (robot) ->
 
   robot.hear /./i, (msg) ->
 
-    if Math.floor(Math.random() * 300) == 42
+    if Math.floor(Math.random() * 200) == 42
       setTimeout () ->
         msg.send cato.catoQuote()
         , 20000
 
-    if Math.floor(Math.random() * 300) == 142
+    if Math.floor(Math.random() * 200) == 142
       setTimeout() ->
         msg.send cato.catoImage()
         , 20000
