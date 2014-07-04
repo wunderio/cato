@@ -53,7 +53,9 @@ Clouseau: Because I'm taller than you are, you fool!",
       "Clouseau: But these aren't normal times. Cato. Someone just tried to kill me.\n
 Cato: That's normal.\n
 Clouseau: Ah, but this time, he thinks he had succeed.",
-      "Clouseau: You fool! You raving Oriental idiot! There is a time and a place for everything, Cato! ... And this is it!"
+      "Clouseau: You fool! You raving Oriental idiot! There is a time and a place for everything, Cato! ... And this is it!",
+      "Clouseau: You know, I am ashamed of myself, Cato. I forgot the first rule of self-defence. No matter what the circumstances, always anticipate the unexpected. Had you been a real assassin might have killed me. We're going to have to accelerate our training programme. You must learn to attack me whenever and wherever l least expect it and you must give no quarter. Understand?",
+      "Clouseau: Argh! Cato, you fool. Get off of me, will you? Get off me! Cato, what are you doing? Not now. Cato! Release me, you fool!"
     ]
 
   catoImage: ->
