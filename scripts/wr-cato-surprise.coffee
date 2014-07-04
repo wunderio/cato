@@ -40,20 +40,20 @@ class WRCatoSurprise
     @cato_quotes = [
       "Cato: Please, boss! I thought you were dead!\n
 Clouseau: So as a tribute to my memory, you open this ... this Chinese nookie factory?\n
-Cato: l had to do something to keep busy. Besides, a first-rate joint like this can make as much as three, four hundred thousand a year!'n
+Cato: l had to do something to keep busy. Besides, a first-rate joint like this can make as much as three, four hundred thousand a year!'\n
 Clouseau: Is that net?\n
 Cato: No, gross.",
       "Saaaaaaaaaah!",
       "Clouseau: Cato! You imbecile, not now Cato!",
-      "Cato: It's so obvious, it's bound to be a trap.
+      "Cato: It's so obvious, it's bound to be a trap.\n
 Clouseau: That is why you'll never be a great detective, Cato. It's so obvious that it could not possibly be a trap.",
-      "Clouseau: Now, this time *I'm* going to stand on *your* shoulders!
-Cato: What good will that do?
+      "Clouseau: Now, this time *I'm* going to stand on *your* shoulders!\n
+Cato: What good will that do?\n
 Clouseau: Because I'm taller than you are, you fool!",
-      "Clouseau: But these aren't normal times. Cato. Someone just tried to kill me.
-Cato: That's normal.
+      "Clouseau: But these aren't normal times. Cato. Someone just tried to kill me.\n
+Cato: That's normal.\n
 Clouseau: Ah, but this time, he thinks he had succeed.",
-      "Clouseau: You fool! You raving Oriental idiot! There is a time and a place for everything, Cato! And this is it!"
+      "Clouseau: You fool! You raving Oriental idiot! There is a time and a place for everything, Cato! ... And this is it!"
     ]
 
   catoImage: ->
