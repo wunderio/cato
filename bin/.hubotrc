@@ -7,6 +7,8 @@ export HUBOT_JENKINS_AUTH="joe.baker@wunderkraut.com:d6bfa6773a128ae8d09e5544bdd
 export HUBOT_WOLFRAM_APPID="2TPVX8-E3QHJHWXHX"
 export HUBOT_FORECAST_API_KEY="fd0a1bdc2a4e9a3332e407db7b8b212b"
 export HUBOT_WEATHER_CELSIUS=1
+export HUBOT_RALLY_USERNAME="cato@wunderkraut.com"
+export HUBOT_RALLY_PASSWORD="thehub2014"
 
 # bin/hubot --adapter hipchat
 
