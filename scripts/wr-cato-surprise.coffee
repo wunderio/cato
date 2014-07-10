@@ -74,8 +74,7 @@ module.exports = (robot) ->
       setTimeout () ->
         msg.send cato.catoQuote()
       , 20000
-
-    if Math.floor(Math.random() * 200) == 142
+    else if Math.floor(Math.random() * 200) == 142
       setTimeout() ->
         msg.send cato.catoImage()
       , 20000
