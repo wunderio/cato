@@ -39,7 +39,7 @@ class WRHug
       "you got a full-on hug - call HR!",
       "you got a very shy, English hug.",
       "hugs from robots aren't the softest, but here's one for you.",
-      "toughen up, son, here's a hug for you. When I were a lad we ne'er 'ad hugs. We just got beaten."
+      "toughen up, kid, here's a hug for you. When I were a lad we ne'er 'ad hugs. We just got beaten."
     ]
 
     # @decrement_responses = [
