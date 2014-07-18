@@ -65,20 +65,27 @@ Clouseau: Ah, but this time, he thinks he had succeed.",
   catoQuote: ->
     @cato_quotes[Math.floor(Math.random() * @cato_quotes.length)]
 
+  randomInt: (lower, upper) ->
+    [lower, upper] = [0, lower]     unless upper?           # Called with one argument
+    [lower, upper] = [upper, lower] if lower > upper        # Lower must be less then upper
+    Math.floor(Math.random() * (upper - lower + 1) + lower) # Last statement is a return value
+
 
 module.exports = (robot) ->
   cato = new WRCatoSurprise robot
 
   robot.hear /./i, (msg) ->
+    random_num = cato.randomInt(0, 200)
 
-    if Math.floor(Math.random() * 200) == 42
-      setTimeout () ->
-        msg.send cato.catoQuote()
-      , 20000
-    else if Math.floor(Math.random() * 200) == 142
-      setTimeout() ->
-        msg.send cato.catoImage()
-      , 20000
+    switch random_num
+      when '42'
+        setTimeout () ->
+          msg.send cato.catoQuote()
+        , 20000
+      when '142'
+        setTimeout() ->
+          msg.send cato.catoImage()
+        , 20000
 
   robot.hear /cato quote/i, (msg) ->
     msg.send cato.catoQuote()
