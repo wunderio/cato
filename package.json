@@ -27,6 +27,7 @@
     "hubot-slack": "*",
     "jsdom": ">=0.2.14",
     "jquery": "*",
+    "wolfram": "*",
     "hubot-tell": "*"
   },
   "engines": {
