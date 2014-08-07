@@ -35,7 +35,8 @@ class WRCatoSurprise
       "http://v007o.popscreen.com/eGhyNXNjMTI=_o_cato-and-clouseau-fight.jpg",
       "http://p2.storage.canalblog.com/23/60/659817/45439855.jpg",
       "http://www.classicmoviehub.com/blog/wp-content/uploads/2014/03/clouseaukarate2.jpg",
-      "http://markblevis.com/wp-content/uploads/2012/09/CatoFong.jpg"
+      "http://markblevis.com/wp-content/uploads/2012/09/CatoFong.jpg",
+      "http://cognitivecompost.com/wp-content/uploads/2013/10/0525453_3944_MC_Tx304.jpg"
     ]
 
     @cato_quotes = [
