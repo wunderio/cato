@@ -42,7 +42,7 @@ class WRCatoSurprise
     @cato_quotes = [
       "Cato: Please, boss! I thought you were dead!\n
 Clouseau: So as a tribute to my memory, you open this ... this Chinese nookie factory?\n
-Cato: l had to do something to keep busy. Besides, a first-rate joint like this can make as much as three, four hundred thousand a year!'\n
+Cato: I had to do something to keep busy. Besides, a first-rate joint like this can make as much as three, four hundred thousand a year!'\n
 Clouseau: Is that net?\n
 Cato: No, gross.",
       "Saaaaaaaaaah!",
@@ -56,7 +56,7 @@ Clouseau: Because I'm taller than you are, you fool!",
 Cato: That's normal.\n
 Clouseau: Ah, but this time, he thinks he had succeed.",
       "Clouseau: You fool! You raving Oriental idiot! There is a time and a place for everything, Cato! ... And this is it!",
-      "Clouseau: You know, I am ashamed of myself, Cato. I forgot the first rule of self-defence. No matter what the circumstances, always anticipate the unexpected. Had you been a real assassin might have killed me. We're going to have to accelerate our training programme. You must learn to attack me whenever and wherever l least expect it and you must give no quarter. Understand?",
+      "Clouseau: You know, I am ashamed of myself, Cato. I forgot the first rule of self-defence. No matter what the circumstances, always anticipate the unexpected. Had you been a real assassin you might have killed me. We're going to have to accelerate our training programme. You must learn to attack me whenever and wherever l least expect it and you must give no quarter. Understand?",
       "Clouseau: Argh! Cato, you fool. Get off of me, will you? Get off me! Cato, what are you doing? Not now. Cato! Release me, you fool!"
     ]
 
