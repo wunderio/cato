@@ -7,7 +7,7 @@
 # Commands:
 #   hubot cato quote - get a Cato quote
 #   hubot cato image - get a Cato image
-#   hubot attack @name - get a Hubot to attack @name
+#   hubot attack @name - get Hubot to attack @name
 #
 # Author:
 #   Joe Baker
@@ -108,4 +108,6 @@ module.exports = (robot) ->
     msg.send cato.catoImage()
 
   robot.hear /attack \@([^\s]+)/i, (msg) ->
+    subject = msg.match[1]
+    sender  = msg.message.user
     msg.send msg.random cato.catoAttacks(sender, subject)
