@@ -110,4 +110,6 @@ module.exports = (robot) ->
   robot.hear /attack \@([^\s]+)/i, (msg) ->
     subject = msg.match[1]
     sender  = msg.message.user
+    msg.send cato.catoImage()
     msg.send msg.random cato.catoAttacks(sender, subject)
+
