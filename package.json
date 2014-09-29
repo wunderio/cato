@@ -28,7 +28,8 @@
     "jsdom": ">=0.2.14",
     "jquery": "*",
     "wolfram": "*",
-    "hubot-tell": "*"
+    "hubot-tell": "*",
+    "hubot-google-hangouts": "*"
   },
   "engines": {
     "node": ">= 0.8.x",
