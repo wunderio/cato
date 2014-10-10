@@ -123,7 +123,7 @@ module.exports = (robot) ->
     sender  = msg.message.user
     if subject.toLowerCase() == 'all' or subject.toLowerCase() == 'here'
       msg.send msg.random wrhug.groupHugResponses(msg.message.user.name)
-    else if allow_self is true or msg.message.user.name.toLowerCase() != subject.toLowerCase()
+    else if allow_self is true or msg.message.user.mention_name.toLowerCase() != subject.toLowerCase()
       wrhug.increment subject
       msg.send "@#{subject} #{wrhug.incrementResponse()} (#{subject} has #{wrhug.get(subject)} hug#{if wrhug.get(subject) > 1 then 's' else ''})"
       int = wrhug.randomInt(1, 4)
