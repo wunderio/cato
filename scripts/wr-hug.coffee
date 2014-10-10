@@ -66,14 +66,23 @@ class WRHug
      @drop_responses = [
        "OK @#{sender.mention_name}, you can let go of @#{subject} now.",
        "Right, @#{sender.mention_name}, put @#{subject} down right now! That's quite enough of that.",
-       "Hey, you, yes you @#{sender.mention_name}, I can see you still hugging @#{subject} - time to stop now."
+       "Hey, you, yes you @#{sender.mention_name}, I can see you still hugging @#{subject} - time to stop now.",
+       "Ok, ok, this has gone on for way too long. Break it up now @#{sender.mention_name} and @#{subject}.",
+       "Well, this has gone on long enough you should probably kiss now. Break it up or get a room, @#{sender.mention_name} and @#{subject}."
      ]
 
   selfDeniedResponses: (name) ->
     @self_denied_responses = [
       "Hey everyone! #{name} is a narcissist!",
       "I might just allow that next time, but no.",
-      "I can't do that #{name}."
+      "I can't let you do that #{name}."
+    ]
+
+  groupHugResponses: (name) ->
+    @group_hug_responses = [
+      "I'm sorry but my arms just aren't that big - I can't hug everybody!",
+      "I can't do that #{name}.",
+      "Group hugs are too claustrophobic, sorry."
     ]
 
   get: (thing) ->
@@ -112,7 +121,9 @@ module.exports = (robot) ->
   robot.hear /hug \@([^\s]+)/i, (msg) ->
     subject = msg.match[1]
     sender  = msg.message.user
-    if allow_self is true or msg.message.user.name.toLowerCase() != subject
+    if subject.toLowerCase() == 'all' or subject.toLowerCase() == 'here'
+      msg.send msg.random wrhug.groupHugResponses(msg.message.user.name)
+    else if allow_self is true or msg.message.user.name.toLowerCase() != subject.toLowerCase()
       wrhug.increment subject
       msg.send "@#{subject} #{wrhug.incrementResponse()} (#{subject} has #{wrhug.get(subject)} hug#{if wrhug.get(subject) > 1 then 's' else ''})"
       int = wrhug.randomInt(1, 4)
