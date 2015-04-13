@@ -29,7 +29,9 @@
     "jquery": "*",
     "wolfram": "*",
     "hubot-tell": "*",
-    "hubot-google-hangouts": "*"
+    "hubot-google-hangouts": "*",
+    "underscore": "*",
+    "underscore.string": "*"
   },
   "engines": {
     "node": ">= 0.8.x",
