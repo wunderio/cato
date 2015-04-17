@@ -22,8 +22,10 @@
   },
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
-    "hubot-scripts": ">= 2.5.0 < 3.0.0",
+    "hubot-drupalorg": "0.0.2",
+    "hubot-google-hangouts": "*",
     "hubot-hipchat": "~2.6.4",
+    "hubot-scripts": ">= 2.5.0 < 3.0.0",
     "hubot-slack": "*",
     "jsdom": ">=0.2.14",
     "jquery": "*",
