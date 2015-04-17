@@ -33,7 +33,8 @@
     "hubot-tell": "*",
     "hubot-google-hangouts": "*",
     "underscore": "*",
-    "underscore.string": "*"
+    "underscore.string": "*",
+    "request": "*"
   },
   "engines": {
     "node": ">= 0.8.x",
