@@ -1,6 +1,9 @@
-# Not now, Cato!# 
+# Not now, Cato!
 
-This is Cato, the [WunderRoot](http://www.wunderroot.co.uk/) implementation of [Hubot](https://hubot.github.com/).
+![Cato and Clouseau](http://i.telegraph.co.uk/multimedia/archive/02406/pinkpanther1_2406759b.jpg)
+
+This is Cato, the [Wunderkraut](http://www.wunderkraut.com/) implementation of [Hubot](https://hubot.github.com/).
+
 
 ### Running Cato Locally
 
