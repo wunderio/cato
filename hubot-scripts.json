@@ -1,1 +1,23 @@
-["status.coffee", "jira-issues.coffee", "redis-brain.coffee", "shipit.coffee", "whatis.coffee", "speak.coffee", "google.coffee", "remind.coffee", "weather.coffee", "wolfram.coffee", "directions.coffee", "xkcd.coffee", "jenkins.coffee", "github-credentials.coffee", "reload.coffee", "excuse.coffee", "phpdoc.coffee", "rotten.coffee", "chuck-norris.coffee", "factoid.coffee", "botsnack.coffee", "rally.coffee", "foass.coffee", "kittens.coffee", "reddit-jokes.coffee"]
+[
+  "applause.coffee",
+  "botsnack.coffee",
+  "chuck-norris.coffee",
+  "directions.coffee",
+  "excuse.coffee",
+  "factoid.coffee",
+  "foass.coffee",
+  "github-credentials.coffee",
+  "google.coffee",
+  "ive.coffee",
+  "jenkins.coffee",
+  "jira-issues.coffee",
+  "kittens.coffee",
+  "phpdoc.coffee",
+  "rotten.coffee",
+  "rally.coffee",
+  "reddit-jokes.coffee",
+  "reload.coffee",
+  "speak.coffee",
+  "weather.coffee",
+  "xkcd.coffee"
+  ]
