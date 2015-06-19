@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   "hubot-auth",
   "hubot-diagnostics",
@@ -15,3 +16,6 @@
   "hubot-status",
   "hubot-youtube"
 ]
+=======
+["hubot-tell", "hubot-google-hangouts", "hubot-drupalorg", "hubot-auth"]
+>>>>>>> 49944e6a45f4dd40e6f30c30c678df14ab85b6db
