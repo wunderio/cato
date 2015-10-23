@@ -54,5 +54,8 @@
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "devDependencies": {
+    "hubot-business-cat": "^1.2.6"
   }
 }
