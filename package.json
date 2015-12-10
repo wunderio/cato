@@ -27,6 +27,7 @@
     "hubot-status": "*",
     "hubot-tell": "*",
     "hubot-youtube-v3": "*",
+    "connect": "*",
     "body-parser": "*",
     "decimal": "*",
     "lodash": "*",
