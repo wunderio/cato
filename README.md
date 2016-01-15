@@ -175,3 +175,12 @@ hubot onto Windows][deploy-windows] wiki pages.
 [deploy-heroku]: https://github.com/github/hubot/blob/master/docs/deploying/heroku.md
 [deploy-unix]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
 [deploy-windows]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
+
+### Upgrading
+
+There are two ways of upgrading hubot:
+
+1. ```npm update --save```
+2. ```npm update --save && ncu -u && npm install```
+
+The second method requires npm-check-update - ```npm install -g npm-check-update``` - This updates dependencies to their latest version regardless of existing version constraints.
